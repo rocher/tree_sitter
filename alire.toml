@@ -1,0 +1,16 @@
+name = "tree_sitter"
+description = "Ada bindings for the Tree-sitter parsing library"
+version = "0.1.0-dev"
+
+authors = ["Francesc Rocher"]
+maintainers = ["Francesc Rocher <francesc.rocher@gmail.com>"]
+maintainers-logins = ["rocher"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = "https://tree-sitter-ada.github.io"
+tags = ["tree-sitter", "binding", "parsing"]
+
+[build-switches]
+"*".ada_version = "ada2022"
+
+[[depends-on]]
+libtree_sitter = "~0.20.8"
